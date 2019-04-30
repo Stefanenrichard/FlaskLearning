@@ -1,0 +1,18 @@
+<html>
+	<head>
+		{% if title %}
+		<title> {{ title }} - Rietads </title>
+		{% else %}
+		<title> Welcome to trekjebak </title>
+		{% endif %}
+	</head>
+	<body>
+		<div> 
+			Moet ik een rietad: 
+			<a href= "/index">Home</a>
+			<a href= "/login">Login</a>
+		</div>
+		<hr>
+		{% block content %} {% endblock %}
+	</body>
+</html>
